@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LETS STREAM</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div id="nav">
+      <h1 id="lets">LETS STREAM</h1>
+    </div>
+    <div id="main-content">
+      <div id="video-container">
+        <video id="user-video" autoplay muted></video>
+      </div>
+      <div id="controls">
+        <button id="start-btn">Start</button>
+        <button id="stop-btn">Stop</button>
+      </div>
+      <div class="sidebar">
+        <label for="stream-url">Enter Stream URL</label>
+        <input type="url" id="stream-url" placeholder="Stream URL" />
+        <label for="stream-key">Enter Stream Key</label>
+        <input type="password" id="stream-key" placeholder="Stream Key" />
+      </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
